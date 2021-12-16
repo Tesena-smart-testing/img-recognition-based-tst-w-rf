@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Sikuli library excercise for calculator
+Documentation     Sikuli library excercise for Calculator
 Library           SikuliLibrary
 Test Setup        Add Needed Image Path
 Test Teardown     Stop Remote Server
