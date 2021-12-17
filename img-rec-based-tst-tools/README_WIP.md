@@ -17,3 +17,10 @@ Installation Guide for AutoIT Library
 Documentatin is available after installation.
 Documentation here: C:\RobotFramework\Extensions\AutoItLibrary\AutoItLibrary.html
 Description: https://pypi.org/project/robotframework-autoitlibrary/#description
+
+WatchUI
+
+Documentation here:
+1. Clone the WatchUI library source code from: https://github.com/Tesena-smart-testing/WatchUI.git
+2. 
+3. pip install WatchUI
