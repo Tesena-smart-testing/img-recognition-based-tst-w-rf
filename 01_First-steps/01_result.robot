@@ -10,7 +10,6 @@ Simple test
     [Timeout]          2s
     Log                Simple message into log
     Log                second into log
-    # [Teardown]
 
 Simple test w own KW
     [Documentation]    This is my second test

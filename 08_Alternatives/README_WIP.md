@@ -22,5 +22,4 @@ WatchUI
 
 Documentation here:
 1. Clone the WatchUI library source code from: https://github.com/Tesena-smart-testing/WatchUI.git
-2. 
-3. pip install WatchUI
+2. pip install WatchUI

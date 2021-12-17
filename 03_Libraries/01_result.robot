@@ -32,7 +32,7 @@ Web respons time should be under 500 ms
     ${resp time}=     Convert Time	${resp.elapsed}
     Should Be True    ${resp time} < 500
 
-Web status OK
+Web status OK (200)
     Create Session      web                  ${URL}
     Log                 web
     ${headers}=         Create Dictionary    User-Agent=RFTest
