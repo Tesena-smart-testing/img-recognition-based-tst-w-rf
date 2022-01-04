@@ -1,18 +1,19 @@
 *** Settings ***
-Documentation     Sikuli library excercise for Calculator
+Documentation     Sikuli library exercise for Calculator
 Library           SikuliLibrary
-Test Setup        Add Needed Image Path
-Test Teardown     Stop Remote Server
+Test Setup        Add Needed Image Path  # Image Path is necessary in either *** Settings *** or *** Test Cases ***
+Test Teardown     Stop Remote Server     # optional but recommended, see: http://rainmanwy.github.io/robotframework-SikuliLibrary/doc/SikuliLibrary.html#Stop%20Remote%20Server
 
 *** Variables ***
-${IMAGE_DIR}    ${CURDIR}\\img\\1_calculator
+${IMAGE_DIR}    ${CURDIR}\\img\\01_img_calculator
 
 *** Test Cases ***
 Calculator Test
     Open Windows Calculator App
-    Try 1 + 2
+    Choose Type Of Calculator   standard
+    Calculate 1 + 2
     Choose Type Of Calculator   scientific
-    Try 1 + 2
+    Calculate 1 + 2
 
 *** Keywords ***
 Add Needed Image Path
@@ -22,7 +23,7 @@ Open Windows Calculator App
     Input Text  search_input_win10_eng.png  Calculator
     Click   calculator_app_win10_eng.png   10
 
-Try 1 + 2
+Calculate 1 + 2
     Click   no_1.png
     Click   operator_plus.png
     Click   no_2.png
