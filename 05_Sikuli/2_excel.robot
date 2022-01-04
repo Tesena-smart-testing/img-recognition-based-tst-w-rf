@@ -39,8 +39,8 @@ Open Excel
     Click    excel_app_win10_icon.png
     Wait Until Screen Contain	     blank_workbook.png	 15
     Click    blank_workbook.png
-    ${excel_maximize}	 Exists	 maximize_excel.png     5
-    Run Keyword If       ${excel_maximize}  Click    maximize_excel.png
+    ${excel_minimize}	 Exists	 minimize_excel.png     5
+    Run Keyword If       "${excel_minimize}"=="false"  Click    maximize_excel.png
 
 #   TO DO: add pictures to img->excel folder and think about more keywords demonstration than repeating "Wait Until Screen Contain" and "Click"
 
