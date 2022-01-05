@@ -2,7 +2,7 @@
 Documentation     Sikuli library exercise for Excel
 Library           SikuliLibrary
 Library           String
-Test Setup        Add Needed Image Path
+Test Setup        Sikuli Image Path
 Test Teardown     Stop Remote Server
 
 *** Variables ***
@@ -31,7 +31,7 @@ Excel Test
     Quit Excel Without Saving File
 
 *** Keywords ***
-Add Needed Image Path
+Sikuli Image Path
     Add Image Path    ${IMAGE_DIR}
     Add Image Path    ${COMMON_IMAGE_DIR}
 
@@ -136,7 +136,7 @@ Create And Move Graph
    Mouse Down	                     LEFT
    Drag And Drop By Offset           graph_corner.png  300  -150  
 
-
+#    WIP
 #    ImageHorizonLibrary.Locate    graph_corner.png
 #    ImageHorizonLibrary.Move To     1000  1000
 
