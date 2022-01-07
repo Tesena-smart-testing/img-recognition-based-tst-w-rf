@@ -201,3 +201,28 @@ selenium-screenshot-*.png
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+### WatchUI gitignore ###
+.idea
+.vscode
+.venv
+__pycache__/
+build
+Outputs
+WatchUI.egg-info
+Docker
+log.html
+output.xml
+report.html
+chromedriver.exe
+
+### Sikuli gitignore ###
+./Sikuli*.txt
+./sikuli_captured
+./sikuli_captured/*
+.idea/encodings.xml
+.idea/inspectionProfiles/
+selenium-screenshot-*.png
+output*.pdf
+output*.xml
+./reportdir
+./reportdir/*

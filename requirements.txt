@@ -2,3 +2,5 @@ robotframework
 robotframework-seleniumlibrary
 robotframework-requests
 robotframework-SikuliLibrary
+robotframework-imagehorizonlibrary
+WatchUI

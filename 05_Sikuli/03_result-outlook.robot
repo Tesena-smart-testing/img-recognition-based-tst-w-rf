@@ -5,7 +5,7 @@ Library           SikuliLibrary
 Test Teardown     Close All Browsers
 
 *** Variables ***
-# Variables needed to use Selenium in this test:
+# ---------------------------------------- Selenium Variables ----------------------------------------------------
 ${URL}                      https://www.amazon.com
 ${BROWSER}                  Chrome
 ${SEARCH TERM}              Kindle
@@ -14,7 +14,7 @@ ${SEARCH SUBMIT BUTTON}     id:nav-search-submit-button
 ${SEARCH RESULT 1}          //img[@data-image-index="1"]
 ${SHARE VIA EMAIL}          id:swfImageMailTo
 
-# Variables needed to use Sikuli in this test:
+# ---------------------------------------- Sikuli Variables ------------------------------------------------------
 ${IMAGE_DIR}                ${CURDIR}\\img\\03_img_outlook
 ${EMAIL ADDRESS}            leila.miri@tesena.com
 

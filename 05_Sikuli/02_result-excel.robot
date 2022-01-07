@@ -116,7 +116,7 @@ Format Data As Table
    Click                             format_as_table.png
    Wait Until Screen Contain	     table_style_light_14.png	5
    Click                             table_style_light_14.png
-   Wait Until Screen Contain	     create_table_en.png	5
+   Wait Until Screen Contain	     create_table_en.png	    5
    # Advanced option:
    # Press Special Key               BACKSPACE
    # Input Text  ${EMPTY}  ${CELL SELECTOR LIST FOR HEADER}[0]:${CELL SELECTOR LIST FOR SALARY}[-1]
@@ -126,23 +126,18 @@ Format Data As Table
 
 Create And Move Graph
    Wait Until Screen Contain	     home_insert_en.png	 5
-   Click In                          home_insert_en.png  insert_en.png
-   Wait Until Screen Contain	     bar_chart.png	5
+   Click In                          home_insert_en.png        insert_en.png
+   Wait Until Screen Contain	     bar_chart.png	     5
    Click                             bar_chart.png
-   Wait Until Screen Contain	     stacked_bar.png	5
+   Wait Until Screen Contain	     stacked_bar.png	 5
    Click                             stacked_bar.png
    Sleep                             1s
    Mouse Move                        graph_corner.png
    Mouse Down	                     LEFT
-   Drag And Drop By Offset           graph_corner.png  300  -150  
-
-#    WIP
-#    ImageHorizonLibrary.Locate    graph_corner.png
-#    ImageHorizonLibrary.Move To     1000  1000
-
-#    Drag And Drop By Offset  drag.png  1000  1000
-#    Drag And Drop   output_drag.png      output_drop.png
+   Drag And Drop By Offset           graph_corner.png    300  -150  
 
 Quit Excel Without Saving File
+    Wait Until Screen Contain        close_excel.png
     Click                            close_excel.png
+    Wait Until Screen Contain        dont_save_excel_en.png
     Click                            dont_save_excel_en.png
