@@ -216,6 +216,8 @@ report.html
 chromedriver.exe
 
 ### Sikuli gitignore ###
+Sikuli*.txt
+sikuli_captured
 ./Sikuli*.txt
 ./sikuli_captured
 ./sikuli_captured/*

@@ -10,7 +10,7 @@ Calculator Test
     # 1 + 2 on standard and scientific calculator.
 
 *** Keywords ***
-Sikuli Image Path
+Set Sikuli Image Path
     Add Image Path  ${IMAGE_DIR}
 
 

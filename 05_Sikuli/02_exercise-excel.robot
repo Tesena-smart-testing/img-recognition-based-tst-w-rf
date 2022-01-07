@@ -2,7 +2,7 @@
 Documentation     Sikuli library exercise for Excel
 Library           SikuliLibrary
 Library           String
-Test Setup        Sikuli Image Path
+Test Setup        Set Sikuli Image Path
 Test Teardown     Stop Remote Server
 
 *** Variables ***
@@ -32,7 +32,7 @@ Excel Test
     Quit Excel Without Saving File
 
 *** Keywords ***
-Sikuli Image Path
+Set Sikuli Image Path
     Add Image Path    ${IMAGE_DIR}
     Add Image Path    ${COMMON_IMAGE_DIR}
 

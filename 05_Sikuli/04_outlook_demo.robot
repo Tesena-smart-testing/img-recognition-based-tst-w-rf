@@ -15,7 +15,7 @@ ${SEARCH RESULT 1}          //img[@data-image-index="1"]
 ${SHARE VIA EMAIL}          id:swfImageMailTo
 
 # ---------------------------------------- Sikuli Variables ------------------------------------------------------
-${IMAGE_DIR}                ${CURDIR}\\img\\03_img_outlook
+${IMAGE_DIR}                ${CURDIR}\\img\\04_img_outlook
 ${EMAIL ADDRESS}            leila.miri@tesena.com
 
 *** Test Cases ***
@@ -28,7 +28,7 @@ Outlook Test
 
 *** Keywords ***
 Sikuli Image Path
-    Add Image Path                              ${IMAGE_DIR}
+    SikuliLibrary.Add Image Path                              ${IMAGE_DIR}
 
 Open Browser
     SeleniumLibrary.Open Browser                ${URL}                          ${BROWSER}

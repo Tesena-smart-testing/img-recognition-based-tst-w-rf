@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Sikuli library exercise for Calculator
 Library           SikuliLibrary
-Test Setup        Sikuli Image Path      # Image Path is necessary in either *** Settings *** or *** Test Cases ***
+Test Setup        Set Sikuli Image Path  # Image Path is necessary in either *** Settings *** or *** Test Cases ***
 Test Teardown     Stop Remote Server     # optional but recommended, see: http://rainmanwy.github.io/robotframework-SikuliLibrary/doc/SikuliLibrary.html#Stop%20Remote%20Server
 
 *** Variables ***
@@ -16,7 +16,7 @@ Calculator Test
     Calculate 1 + 2
 
 *** Keywords ***
-Sikuli Image Path
+Set Sikuli Image Path
     Add Image Path  ${IMAGE_DIR}
 
 Open Windows Calculator App
