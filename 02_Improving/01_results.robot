@@ -12,15 +12,15 @@ ${SLEEP}    5
 
 ${SCALAR}         1
 @{LIST}           1 2
-&{DICTIONARY}     a=1       b=2
-${ENVIRONMENT}    %{TMP}
+&{DICTIONARY}     a=1        b=2
+${ENVIRONMENT}    %{USER}
 
 *** Test Cases ***
 Failing test
     [Documentation]    This is my third test 
     [Tags]             first 
     [Timeout]          2s
-    Sleep              ${SLEEP}
+    Sleep              ${SLEEP}                  # Sleep for 5 seconds for fail due to timeout set lower than 5 seconds above
     [Teardown]         Log To Console            My cool test just do nothing!? 
 
 My third test

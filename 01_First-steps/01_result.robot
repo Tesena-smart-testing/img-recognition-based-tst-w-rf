@@ -21,7 +21,7 @@ Simple test w own KW
 
 
 *** Keywords ***
-Simle KW
+Simple KW
     Log    This is my first KW
 
 My own KW w Return

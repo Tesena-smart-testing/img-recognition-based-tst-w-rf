@@ -4,3 +4,54 @@
 2. create a new virtual environment: `python3 -m venv venv`
 3. activate the virtual environment: Ctrl+Shift+P > Python: Select Interpreter > .venv/bin/python
 4. install dependencies: `pip install -r requirements.txt`
+
+## Usefull links
+
+### Selenium library
+
+- pip instalation: https://pypi.org/project/robotframework-seleniumlibrary/
+- GitHub: https://github.com/robotframework/SeleniumLibrary
+- Documentation: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
+
+### Requests library
+
+- pip instalation: https://pypi.org/project/robotframework-requests/
+- GitHub: https://github.com/MarketSquare/robotframework-requests
+- Documentation: https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html
+
+### Sikuli
+
+- pip installation: https://pypi.org/project/robotframework-SikuliLibrary/
+- GitHub: https://github.com/rainmanwy/robotframework-SikuliLibrary
+- Keyword documantation: http://rainmanwy.github.io/robotframework-SikuliLibrary/doc/SikuliLibrary.html
+
+### WatchUI
+
+- pip installation: https://pypi.org/project/WatchUI/
+- GitHub: https://github.com/Tesena-smart-testing/WatchUI
+- Keyword documantation: https://tesena-smart-testing.github.io/WatchUI/rf_documentation/
+
+### Image Horizon Library
+
+- pip installation: https://pypi.org/project/robotframework-imagehorizonlibrary/
+- GitHub: https://github.com/Eficode/robotframework-imagehorizonlibrary
+- Keyword documantation: https://eficode.github.io/robotframework-imagehorizonlibrary/doc/ImageHorizonLibrary.html
+
+# Test execution from command line
+
+`--variable` (-v) – set up individual variables passing into script
+
+`--tests` (-t) – select test to execute by name
+
+`--include` (-i) – select test to execute by tag
+
+`--exclude` (-e) – select test to NOT to execute by tag
+
+`--outputdir` (-d) – definuje kde budou uložené reporty
+
+Example:
+
+`robot --variable ENV:INT --tests „New*“ --exclude db --outputdir ./Reports contracts.robot`
+
+More info here:
+https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#command-line-options-for-test-execution

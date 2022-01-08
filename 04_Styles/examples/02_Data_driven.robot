@@ -6,8 +6,9 @@ Test Setup       Start Test
 Test Template    Login
 
 *** Variables ***
-${URL}        https://marcel.veselka.gitlab.io/demo-cicd/
-${BROWSER}    Chrome                                         # Firefox
+${URL}          https://marcel.veselka.gitlab.io/demo-cicd/
+# ${BROWSER}    chrome                                         
+${BROWSER}      headlesschrome                                 
 
 ${TITLE}    Demo App
 

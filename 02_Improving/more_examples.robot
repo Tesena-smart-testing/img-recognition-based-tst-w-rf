@@ -19,7 +19,7 @@ ${SLEEP}    5
 ${SCALAR}   1
 @{LIST}     1 2
 &{DICTIONARY}   a=1  b=2
-${ENVIRONMENT}  %{TMP}
+${ENVIRONMENT}  %{USER}
 
 *** Test Cases ***
 # Purchase order

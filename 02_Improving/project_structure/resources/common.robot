@@ -3,4 +3,4 @@ Library    SeleniumLibrary
 Library    RequestsLibrary
 
 *** Variables ***
-${URL}    https://www.amazon.com
+${URL}        https://www.amazon.com
