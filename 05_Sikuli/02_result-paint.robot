@@ -14,7 +14,7 @@ ${SEARCH BOX ELEMENT}       id:twotabsearchtextbox
 ${SEARCH SUBMIT BUTTON}     id:nav-search-submit-button
 
 # Sikuli Variables:
-${IMAGE_DIR}                .\\img\\03_img_paint
+${IMAGE_DIR}                .\\img\\02_img_paint
 ${PAINT}                    paint
 
 *** Test Cases ***

@@ -50,21 +50,15 @@ TC05 - Create Area
     Create area 200 x 500: basic
     Create area 200 x 500: full set up
 
-# TC06 - PDF and Tesseract
-#     [Tags]  tc06    TT  demo
-#     [Setup]
-#     Create IMG
-#     Create and compare vysvetlivky
-#     Check words                     ${CONTROLL_TEXT}     @{TEXT_COO}
-#     Read text from image
-#     Find diff in PDF
-#     [Teardown]    
-
-#   Python 3.10 unsupported -> probably still a bug
-#   Error: Deprecation: 'loadPage' removed from class 'Document' after v1.19 - use 'load_page'.
-#   Deprecation: 'getPixmap' removed from class 'Page' after v1.19 - use 'get_pixmap'.
-#   Deprecation: 'writePNG' removed from class 'Pixmap' after v1.19 - use 'save'.
-# ..Deprecation: 'getTextWords' removed from class 'Page' after v1.19 - use 'get_text_words'.
+TC06 - PDF and Tesseract
+    [Tags]  tc06    TT  demo
+    [Setup]
+    Create IMG
+    Create and compare vysvetlivky
+    Check words                     ${CONTROLL_TEXT}     @{TEXT_COO}
+    Read text from image
+    Find diff in PDF
+    [Teardown]    
 
 *** Keywords ***
 Start web-browser

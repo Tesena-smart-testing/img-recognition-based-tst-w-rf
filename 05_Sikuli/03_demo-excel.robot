@@ -1,12 +1,12 @@
 *** Settings ***
-Documentation     Sikuli library exercise for Excel
+Documentation     Sikuli library demo for Excel
 Library           SikuliLibrary
 Library           String
 Test Setup        Set Sikuli Image Path
 Test Teardown     Stop Remote Server
 
 *** Variables ***
-${IMAGE_DIR}            ${CURDIR}\\img\\02_img_excel
+${IMAGE_DIR}            ${CURDIR}\\img\\03_img_excel
 ${COMMON_IMAGE_DIR}     ${CURDIR}\\img\\00_img_common
 
 ${SHEET NAME}           sikuli-demo

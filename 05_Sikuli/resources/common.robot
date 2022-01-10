@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Common Keywords file for tests
+Documentation     Common Keywords for tests
 Library           SeleniumLibrary
 Library           SikuliLibrary
 

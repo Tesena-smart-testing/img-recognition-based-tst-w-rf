@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Selenium and Sikuli library exercise in browser and outlook.
+Documentation     Selenium and Sikuli library demo in browser and outlook.
 Library           SeleniumLibrary
 Library           SikuliLibrary
 Test Teardown     Close All Browsers
@@ -28,7 +28,7 @@ Outlook Test
 
 *** Keywords ***
 Sikuli Image Path
-    SikuliLibrary.Add Image Path                              ${IMAGE_DIR}
+    SikuliLibrary.Add Image Path                ${IMAGE_DIR}
 
 Open Browser
     SeleniumLibrary.Open Browser                ${URL}                          ${BROWSER}

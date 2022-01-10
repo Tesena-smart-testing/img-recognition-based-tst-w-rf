@@ -3,7 +3,6 @@
       
 *** Variables ***
 # Exercise: Define variables needed to use Selenium and Sikuli in this test. 
-# Hint: You can use 03_Libraries exercise to help you.
 
 *** Test Cases ***
 Outlook Test
@@ -16,6 +15,7 @@ Outlook Test
         # Make Printscreen
         # Open Windows Paint Application
         # Insert Printscreen and Resize It
+        # Close desktop application and browser
 
 *** Keywords ***
 
