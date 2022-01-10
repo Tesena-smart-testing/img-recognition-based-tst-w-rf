@@ -43,23 +43,23 @@ Open Excel
     Wait Until Screen Contain	                    blank_workbook.png	        15
     Click                                           blank_workbook.png
     Set Min Similarity	0.99
-    ${excel_maximize}   Exists	                    maximize_excel.png          5
+    ${excel_maximize}   Exists	                    maximize_excel.png          15
     Run Keyword If  ${excel_maximize}  Click        maximize_excel.png
     # Alternative option:
     # Run Keyword If  ${excel_maximize}  Click In   min_max_close_buttons_excel.png  maximize_excel.png
 
 Change Sheet Name
-    Wait Until Screen Contain                       sheet1_en.png               5
+    Wait Until Screen Contain                       sheet1_en.png               15
     Right Click                                     sheet1_en.png
-    Wait Until Screen Contain                       rename_sheet_en.png         5
+    Wait Until Screen Contain                       rename_sheet_en.png         15
     Click                                           rename_sheet_en.png
-    Wait Until Screen Contain                       sheet1_highlighted_en.png   5
+    Wait Until Screen Contain                       sheet1_highlighted_en.png   15
     Press Special Key                               BACKSPACE
     Input Text                                      ${EMPTY}  ${SHEET NAME}
     Press Special Key                               ENTER
 
 Input Data In Excel
-    Wait Until Screen Contain                       cell_selector.png	        10
+    Wait Until Screen Contain                       cell_selector.png	        15
     ${Header Length}    Get Length                  ${HEADER}
     Set Test Variable                               ${Header Length}
     ${Name Length}      Get Length                  ${NAME}
@@ -112,32 +112,32 @@ Input Salary Data In Excel
    END
 
 Format Data As Table
-   Wait Until Screen Contain	     format_as_table.png	    5
+   Wait Until Screen Contain	     format_as_table.png	    15
    Click                             format_as_table.png
-   Wait Until Screen Contain	     table_style_light_14.png	5
+   Wait Until Screen Contain	     table_style_light_14.png	15
    Click                             table_style_light_14.png
-   Wait Until Screen Contain	     create_table_en.png	    5
+   Wait Until Screen Contain	     create_table_en.png	    15
    # Advanced option:
    # Press Special Key               BACKSPACE
    # Input Text  ${EMPTY}  ${CELL SELECTOR LIST FOR HEADER}[0]:${CELL SELECTOR LIST FOR SALARY}[-1]
    # Run Keyword If  ${Header Length} == 0   Click    table_headers_en.png
    # Sleep  1s
-   Click In                          ok_cancel_button.png      ok_button.png
+   Click In                          ok_cancel_button.png       ok_button.png
 
 Create And Move Graph
-   Wait Until Screen Contain	     home_insert_en.png	 5
-   Click In                          home_insert_en.png        insert_en.png
-   Wait Until Screen Contain	     bar_chart.png	     5
+   Wait Until Screen Contain	     home_insert_en.png	        15
+   Click In                          home_insert_en.png         insert_en.png
+   Wait Until Screen Contain	     bar_chart.png	            15
    Click                             bar_chart.png
-   Wait Until Screen Contain	     stacked_bar.png	 5
+   Wait Until Screen Contain	     stacked_bar.png	        15
    Click                             stacked_bar.png
    Sleep                             1s
    Mouse Move                        graph_corner.png
    Mouse Down	                     LEFT
-   Drag And Drop By Offset           graph_corner.png    300  -150  
+   Drag And Drop By Offset           graph_corner.png     300   -150  
 
 Quit Excel Without Saving File
-    Wait Until Screen Contain        close_excel.png
-    Click                            close_excel.png
-    Wait Until Screen Contain        dont_save_excel_en.png
+    Wait Until Screen Contain        close_excel.png            15
+    Click                            close_excel.png    
+    Wait Until Screen Contain        dont_save_excel_en.png     15
     Click                            dont_save_excel_en.png
