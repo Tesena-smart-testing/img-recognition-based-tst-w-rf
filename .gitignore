@@ -228,4 +228,3 @@ output*.pdf
 output*.xml
 ./reportdir
 ./reportdir/*
-*.png
