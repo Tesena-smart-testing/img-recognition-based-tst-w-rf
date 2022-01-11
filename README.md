@@ -47,7 +47,7 @@
 
 `--exclude` (-e) – select test to NOT to execute by tag
 
-`--outputdir` (-d) – definuje kde budou uložené reporty
+`--outputdir` (-d) – defines the output directory for reports
 
 Example:
 
