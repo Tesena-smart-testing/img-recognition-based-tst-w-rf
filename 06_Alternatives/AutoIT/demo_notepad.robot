@@ -11,3 +11,5 @@ Notepad Test
     Win Wait Active      Untitled - Notepad
     Send                 Happy New Year 2022!
     Win Close            *Untitled - Notepad
+    Win Wait Active      Notepad  Save
+    Send                 !n
