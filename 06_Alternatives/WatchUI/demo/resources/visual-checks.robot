@@ -19,7 +19,7 @@ Check Visuals
     ...               Create new baseline     ${width}    ${height}    ${path}    ${screen name}
 
     Run Keyword If    '${exist}' == 'PASS'
-    ...               Compare Screen          ${path}/${file name}    save_folder=${path}
+    ...               Compare Screen          ${path}/${file name}    save_folder=${path}    # ssim=0.9
 
     Close Browser
 
