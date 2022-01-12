@@ -28,7 +28,9 @@ Outlook Test
 
 *** Keywords ***
 Sikuli Image Path
+    SikuliLibrary.Directory Should Exist        ${IMAGE_DIR}
     SikuliLibrary.Add Image Path                ${IMAGE_DIR}
+    SikuliLibrary.Set Min Similarity            0.8
 
 Open Browser
     SeleniumLibrary.Open Browser                ${URL}                          ${BROWSER}

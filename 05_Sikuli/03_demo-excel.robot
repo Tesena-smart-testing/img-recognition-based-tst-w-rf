@@ -31,8 +31,9 @@ Excel Test
 
 *** Keywords ***
 Set Sikuli Image Path
-    Add Image Path    ${IMAGE_DIR}
-    Add Image Path    ${COMMON_IMAGE_DIR}
+    Directory Should Exist    ${IMAGE_DIR}
+    Add Image Path            ${IMAGE_DIR}
+    Set Min Similarity        0.8
 
 Open Excel
     Wait Until Screen Contain                       search_input_win10_eng.png  15
