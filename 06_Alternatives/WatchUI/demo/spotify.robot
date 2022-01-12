@@ -2,7 +2,6 @@
 Documentation    Simple example using WatchUI for Visual Checks test types.
 Library          SeleniumLibrary                                               implicit_wait=5    timeout=5
 Library          WatchUI
-Resource         resources/saucelabs.robot
 Test Setup       Start Test
 Test Teardown    Close Browser
 
@@ -16,25 +15,20 @@ ${PATH}       outputs
 *** Test Cases ***
 # Level 1: No automation, fully manual process
 
-
 # Level 2: Use simulators to set up environments (e.g. saucelabs or browserstack )
-
 
 # Level 3: Collect screenshots & manuall check
 Home Page
-    Create Screens    @{SCREENS}    save_folder=${PATH}    screen_name=spotify
-
+    Create Screens    @{SCREENS}    save_folder=${PATH}    screen_name=spotify-
 
 # Level 4: Compare automatically with baseline
 Check Home Page
-    ${width}           ${height} =                              Set Variable           720    1280
-    Set window size    ${width}                                 ${height}
+    ${width}           ${height} =                               Set Variable           720    1280
+    Set window size    ${width}                                  ${height}
     Insert bug
-    Compare Screen     ${PATH}/spotify${width}x${height}.png    save_folder=${PATH}
-
+    Compare Screen     ${PATH}/spotify-${width}x${height}.png    save_folder=${PATH}
 
 # Level 5: Dynamically check elements - no layout dependent
-
 
 # Level 6: Autonomous Visual Testing Bot
 
@@ -47,4 +41,4 @@ Start Test
 #    Open Remote Browser    ${URL}                                    internet explorer       #${BROWSER}
 
 Insert bug
-    Execute JavaScript    document.getElementsByClassName('mh-container svelte-14yhn32')[0].remove();
+    Execute JavaScript    document.getElementsByTagName("h1")[0].remove();

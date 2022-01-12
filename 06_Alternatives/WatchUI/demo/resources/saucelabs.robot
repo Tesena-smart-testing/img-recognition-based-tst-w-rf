@@ -2,7 +2,7 @@
 # to be provided by:
 # SAUCE_USERNAME & SAUCE_ACCESS_KEY taken from system environment variables
 #
-${REMOTE URL}       https://%{SAUCE_USERNAME}:%{SAUCE_ACCESS_KEY}@ondemand.eu-central-1.saucelabs.com:443/wd/hub
+# ${REMOTE URL}       https://%{SAUCE_USERNAME}:%{SAUCE_ACCESS_KEY}@ondemand.eu-central-1.saucelabs.com:443/wd/hub
 
 ${OS}               Windows 10
 ${VERSION}          latest
