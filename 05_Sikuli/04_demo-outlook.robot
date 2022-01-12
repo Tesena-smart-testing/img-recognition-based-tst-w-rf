@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     Selenium and Sikuli library demo in browser and outlook.
+Documentation     Selenium and Sikuli library demo in browser and outlook
 Library           SeleniumLibrary
 Library           SikuliLibrary
 Test Teardown     Close All Browsers
