@@ -5,7 +5,7 @@ Library           OperatingSystem
 Library           WatchUI
 Resource          resources/tesla.robot
 Resource          resources/visual-checks.robot
-# Resource          resources/saucelabs.robot
+# Resource        resources/saucelabs.robot
 Test Setup        Start Order
 Test Teardown     Check Visuals
 Suite Teardown    Close All Browsers
@@ -22,7 +22,7 @@ ${browser}      Chrome
 TC1    # Order Blue Tesla With Auto Pilot
        Order Tesla                                         Deep Blue Metallic    19’’ Sport Wheels    Black and White    YES
 #      Example to fail - different wheels than expected
-     #   Order Tesla                                         Deep Blue Metallic    18’’ Aero Wheels    Black and White    YES
+       # Order Tesla                                         Deep Blue Metallic    18’’ Aero Wheels    Black and White    YES
 
 TC2    # Order Red Tesla No Auto Pilot
        Order Tesla                        Red Multi-Coat    18’’ Aero Wheels    Black and White    NO
