@@ -1,3 +1,19 @@
+# Introduction
+
+This repository is build to help you to master your robot framework skills.
+
+You can use it to practice alone or contact us and we could provide our services to speed it up.
+
+If you are interested, our experts can help you. Please visit our [website training section](https://www.tesena.com/en/training) where you can find the esential courses or contact us via email events@tesena.com to get special offers.
+
+## Aout us
+
+We are sotware testing company with headquarter in Prague, Czech Republic. We are a team of experts in software testing.
+
+Our knowledge of Robot Framework preaty advanced. Several of our experts are working with Robot Framework since founded in 2013.
+
+Apart from testing services, we also provide training for software testing (20+ course types, 600+ attendees in 2021). We have several courses for beginners and experts.
+
 # Project setup
 
 1. install [python](https://www.python.org/downloads/)
@@ -19,6 +35,7 @@
 - [Community's code repository](https://github.com/MarketSquare) ... Requests, Db, Browser, etc.
 
 ## Basics
+
 - [Variables](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#variables)
 - [Set up / Tear down](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#test-setup-and-teardown)
 
