@@ -2,7 +2,7 @@
 
 This repository is build to help you to master your robot framework skills.
 
-You can use it to practice alone or contact us and we could provide our services to speed it up.
+You can use it to practice alone or contact us to speed up you learning via our courses and workshops.
 
 If you are interested, our experts can help you. Please visit our [website training section](https://www.tesena.com/en/training) where you can find the esential courses or contact us via email events@tesena.com to get special offers.
 
