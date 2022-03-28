@@ -200,6 +200,8 @@ selenium-screenshot-*.png
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,robotframework,macos,python
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
+pabot_results
+.pabotsuitenames
 
 ### WatchUI gitignore ###
 .idea
@@ -223,7 +225,7 @@ sikuli_captured
 ./sikuli_captured/*
 .idea/encodings.xml
 .idea/inspectionProfiles/
-selenium-screenshot-*.png
+*selenium-screenshot-*.png
 output*.pdf
 output*.xml
 ./reportdir
