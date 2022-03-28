@@ -1,0 +1,3 @@
+--variable browserName:chrome
+--variable platformName:windows 11
+--variable browserVersion:99
