@@ -16,8 +16,8 @@ ${SEARCH TERM}    Kindle
     ...    browserVersion: ${browserVersion},
     ...    username: %{SAUCE_USERNAME},
     ...    accessKey: %{SAUCE_ACCESS_KEY},
-    ...    name: ${SUITE_NAME},
-    ...    build: tesena-training-sample-build
+    ...    name: ${SUITE_NAME},   # TODO: Fix - doesnt work with W3C capabilities
+    ...    build: tesena-training-sample-build  # TODO: Fix - doesnt work with W3C capabilities
 
 ${browser}         ${browserName}
 ${capabilities}    ${EMPTY.join(${_tmp})} 
