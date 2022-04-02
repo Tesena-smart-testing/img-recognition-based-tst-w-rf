@@ -3,4 +3,6 @@ robotframework-seleniumlibrary
 robotframework-requests
 robotframework-SikuliLibrary
 robotframework-imagehorizonlibrary
+robotframework-pabot
 WatchUI
+robotframework-robocop
