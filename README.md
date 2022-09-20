@@ -6,7 +6,7 @@ You can use it to practice alone or contact us to speed up you learning via our 
 
 If you are interested, our experts can help you. Please visit our [website training section](https://www.tesena.com/en/training) where you can find the esential courses or contact us via email events@tesena.com to get special offers.
 
-## Aout us
+## About us
 
 We are sotware testing company with headquarter in Prague, Czech Republic. We are a team of experts in software testing.
 
